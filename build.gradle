@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jetty'
+
+jettyRun {
+    contextPath = ''
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'com.sun.jersey:jersey-servlet:1.19'
+    )
+}
